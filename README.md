@@ -157,15 +157,15 @@ Start development server
 bash   npm run dev
 Frontend will run on http://localhost:3000
 
-🔑 Environment Variables
-Backend (.env)
+# Environment Variables
+### Backend (.env)
 envSECRET_KEY=your-secret-key-here
 DEBUG=True
 ALLOWED_HOSTS=localhost,127.0.0.1
 CORS_ALLOWED_ORIGINS=http://localhost:3000
 DATABASE_URL=postgresql://user:password@localhost:5432/dbname
-Frontend (.env.local)
-envNEXT_PUBLIC_API_URL=http://127.0.0.1:8000
+### Frontend (.env.local)
+env NEXT_PUBLIC_API_URL=http://127.0.0.1:8000
 
 ## 📊 API Endpoints
 
