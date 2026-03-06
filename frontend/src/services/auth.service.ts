@@ -8,6 +8,7 @@ import {
   ChangePasswordData,
 } from '@/types';
 import Cookies from 'js-cookie';
+import { User } from '@/types';
 
 export const authService = {
   // Login

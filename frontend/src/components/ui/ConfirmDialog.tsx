@@ -11,7 +11,7 @@ interface ConfirmDialogProps {
   message: string;
   confirmText?: string;
   cancelText?: string;
-  variant?: 'danger' | 'warning';
+  variant?: 'danger' | 'primary';
   isLoading?: boolean;
 }
 
@@ -30,13 +30,13 @@ export default function ConfirmDialog({
     <Modal isOpen={isOpen} onClose={onClose} title={title} size="sm">
       <div className="space-y-4">
         <div className="flex items-start space-x-3">
-          <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${
-            variant === 'danger' ? 'bg-danger-100' : 'bg-warning-100'
+         <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${
+          variant === 'danger' ? 'bg-danger-100' : 'bg-primary-100'
           }`}>
-            <AlertTriangle className={`w-5 h-5 ${
-              variant === 'danger' ? 'text-danger-600' : 'text-warning-600'
-            }`} />
-          </div>
+          <AlertTriangle className={`w-5 h-5 ${
+            variant === 'danger' ? 'text-danger-600' : 'text-primary-600'
+          }`} />
+        </div>
           <p className="text-sm text-gray-700 mt-1">{message}</p>
         </div>
 
