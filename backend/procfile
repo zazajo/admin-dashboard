@@ -1,1 +1,2 @@
-web: gunicorn rb_dashboard.wsgi --log-file -
+release: python manage.py migrate --no-input && python manage.py collectstatic --no-input && python manage.py create_superuser_if_none
+web: gunicorn rb_dashboard.wsgi --log-file - --log-level info --access-logfile - --error-logfile - --bind 0.0.0.0:$PORT
