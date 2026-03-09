@@ -108,12 +108,12 @@ export default function LoginPage() {
             </Button>
           </form>
 
-          <div className="mt-6 text-center text-sm text-gray-600">
+          {/* <div className="mt-6 text-center text-sm text-gray-600">
             <p>Forgot Your Password?</p>
-            {/* <p className="font-mono text-xs mt-1">
+            <p className="font-mono text-xs mt-1">
               username / your_password
-            </p> */}
-          </div>
+            </p>
+          </div> */}
         </div>
 
         {/* Footer */}

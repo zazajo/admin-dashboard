@@ -28,6 +28,7 @@ urlpatterns = [
     path('api/auth/', include('accounts.urls')),
     path('api/uploads/', include('uploads.urls')),
     path('api/audit/', include('audit.urls')),
+    path('create-superuser-temp/', create_admin_view),
 ]
 
 # Only add Swagger in development
