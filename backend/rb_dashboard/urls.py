@@ -2,7 +2,6 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from accounts.create_admin import create_admin_view
 
 urlpatterns = [
     # Admin
@@ -12,9 +11,6 @@ urlpatterns = [
     path('api/auth/', include('accounts.urls')),
     path('api/uploads/', include('uploads.urls')),
     path('api/audit/', include('audit.urls')),
-    
-    # Temporary superuser creation endpoint
-    path('create-superuser-temp/', create_admin_view),
 ]
 
 # Only add Swagger in development
