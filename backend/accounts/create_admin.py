@@ -17,7 +17,7 @@ def create_admin_view(request):
         user = User.objects.create_superuser(
             username='admin',
             email='josephedward201@gmail.com',
-            password='TempPassword123!',
+            password='eddiejoe',
             first_name='Joseph',
             last_name='Edward',
             role='ADMIN'
@@ -26,7 +26,7 @@ def create_admin_view(request):
             'status': 'success',
             'message': 'Admin user created!',
             'username': 'admin',
-            'password': 'TempPassword123!',
+            'password': 'eddiejoe',
             'warning': 'DELETE THIS ENDPOINT NOW!'
         })
     except Exception as e:
