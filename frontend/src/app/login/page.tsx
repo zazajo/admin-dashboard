@@ -116,7 +116,7 @@ export default function LoginPage() {
             <p><strong>Username:</strong> demo</p>
             <p><strong>Password:</strong> demo1234</p>
             <p className="text-xs mt-2 text-blue-600">
-              *Read-only access for portfolio demonstration
+              * Manager access for portfolio demonstration
             </p>
           </div>
         </div>
